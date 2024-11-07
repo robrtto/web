@@ -19,6 +19,6 @@ video.onended = () => {
 };
 
 function enterSite() {
-    window.location.href = "main-site.html"
+    window.location.href = "index.html"
 }
 
