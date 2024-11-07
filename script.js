@@ -18,7 +18,7 @@ video.onended = () => {
     buttonContainer.computedStyleMap.opacity = 1;
 };
 
-function enterSize() {
+function enterSite() {
     window.location.href = "main-site.html"
 }
 
