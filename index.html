@@ -3,62 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Roberto Rejopachi Portfolio</title>
+    <title>Rejopachí Portfolio</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body> 
-    <header>
-        <h1>Rejopachí</h1>
-        <h3>Art Meets Technology</h3>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-            <span>></span>
-            <span>></span>
-            <span>></span>
-        </button>
-        <nav class="nav-menu">
-            <a href="#portfolio">Art Portfolio</a>
-            <a href="#projects">Programming Projects</a>
-            <a href="#about">About Me</a>
-            <a href="#contact">Contact Me</a>
-        </nav>
-    </header>
-
-     <!-- Full-Screen Intro Section -->
-     <section class="oneintro">
-        <div class="intro-content">
-            <h2>Art Portfolio</h2>
-            <button class="learn-more-button" onclick="location.href='#portfolio'">Learn More</button>
-            <button class="explore-button" onclick="location.href='#portfolio'">Explore Portfolio</button>
+</head> 
+<body>
+    <div class="intro">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="images/WVES..mp4" type="video/mp4">
+            Your browser does not support this video tag.
+        </video>
+        <div class="portfolio-button-container">
+            <button class="portfolio-button" onclick="enterSite()">Portfolio</button>
         </div>
-    </section>
-   
-    <section id="portfolio">
-        <h2> My Art Portfolio</h2>
-        <p>This is where my artwork will be displayed .</p>
-        <img src="images/la_conquistaa.jpg" alt="Surreal perception of the early conquest of Spanish Latin America" 
-        style="width: 100%; height: auto">
-       
-        <!--insert all projects here -->
-        <!--testtt-->
-    </section>
-    
-    <section id="projects">
-        <h2>Programming Projects</h2>
-         <!-- Showcase projects here -->
-    </section>
-
-    <section id="about">
-        <h2> About Me </h2>
-        <p> I'm Roberto Ortiz Rejopachí, a passionate visual artist and aspiring creative director all in pursuit of blending technology and art to create my unique style </p>
-    </section>
-
-    <footer id="contact">
-        <h3>Contact Me</h3>
-        <p> Email: robertogortiz254@gmail.com</p>
-    </footer>
-
+    </div>
     <script src="script.js" defer></script>
 </body>
 </html>
-
-
