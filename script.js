@@ -21,4 +21,8 @@ video.onended = () => {
 function enterSite() {
     window.location.href = "main.html"
 }
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('open');
+}
 

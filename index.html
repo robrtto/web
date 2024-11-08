@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rejopachí Portfolio</title>
+    <title>Roberto Rejopachí Portfolio</title>
     <link rel="stylesheet" href="style.css">
-</head> 
-<body>
+</head>
+<body> 
+    <!-- Full-Screen Intro Section -->
     <div class="intro">
-        <!--Video Background-->
-        <video id="intro-video" autoplay muted playsinline>
-            <source src="images/WVES..mp4" type="video/mp4">
+        <!-- Video Background -->
+        <video id="intro-video" autoplay muted playsinline loop>
+            <source src="images/WVES.mp4" type="video/mp4">
             Your browser does not support this video tag.
         </video>
 
-        <!--Main conent overlain on video -->
+        <!-- Content Overlaid on Video -->
         <div class="content-container">
-            <!--title (clickable for refresh)-->
-            <h1 class="main-title" onclick="window.location.reload()" >Roberto Rejopachí</h1>
-
-            <!--hamburger menu button-->
+            <!-- Title (clickable for refresh) -->
+            <h1 class="main-title" onclick="window.location.reload()">Roberto Rejopachí</h1>
+            
+            <!-- Hamburger Menu Button -->
             <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
-                ☰  
+                ☰
             </button>
-        </div>
-        <!--navigation menu-->
-        <nav class="nav-menu">
-            <a href="main.html">Portfolio</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About Me</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        
-        <div class="portfolio-button-container">
-            <button class="portfolio-button" onclick="enterSite()">Portfolio</button>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <a href="#portfolio">Art Portfolio</a>
+                <a href="#projects">Programming Projects</a>
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <!-- Button to Enter Portfolio -->
+            <div class="portfolio-button-container">
+                <button class="portfolio-button" onclick="enterSite()">Enter Portfolio</button>
+            </div>
         </div>
     </div>
-    
+
     <script src="script.js" defer></script>
 </body>
 </html>
