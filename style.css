@@ -24,16 +24,7 @@ body, html {
     overflow: hidden;
 }
 
-#intro-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
+
 /* Small Title Styling */
 .small-title {
     position: absolute;
