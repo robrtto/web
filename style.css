@@ -11,7 +11,10 @@ body {
     color: #fff;
 
 }
-
+.title {
+    color: #fff;
+    size: 400px;
+}
 .oneintro {
     background: linear-gradient(rgba(0, 0, 0, 0.6)) url('images/la_conquistaa.jpg');
     background-size: cover;
