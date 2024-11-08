@@ -109,6 +109,14 @@ header {
     margin-bottom: 1rem;
 }
 
+/* Make all images responsive */
+#portfolio la_conquistaa.jpg , PotHeadweb.jpg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
 /* Sections Styling */
 section {
     padding: 4rem 2rem;
