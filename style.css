@@ -115,12 +115,12 @@ h1 {
     color: #000;
 }
 
-.nav-menu {
+.nav-menu2 {
     display: flex;
     gap: 2rem;
 }
 
-.nav-menu a {
+.nav-menu2 a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -128,7 +128,7 @@ h1 {
     transition: color 0.3s ease;
 }
 
-.nav-menu a:hover {
+.nav-menu2 a:hover {
     color: #1f0b22;
 }
 
@@ -155,7 +155,7 @@ section {
     }
 }
 @media (max-width: 768px) {
-    .nav-menu {
+    .nav-menu2 {
         display: none;
         flex-direction: column;
         align-items: flex-start;
@@ -163,7 +163,7 @@ section {
         background-color: rgba(255, 255, 255, 0.95);
     }
 
-    .nav-menu.open {
+    .nav-menu.open2 {
         display: flex;
     }
 
