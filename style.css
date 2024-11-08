@@ -34,7 +34,15 @@ body, html {
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-
+/* Small Title Styling */
+.small-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0.8;
+}
 .content-container {
     position: relative;
     text-align: center;
