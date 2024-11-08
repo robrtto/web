@@ -23,7 +23,16 @@ body, html {
     justify-content: center;
     overflow: hidden;
 }
-
+#intro-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+   
+}
 
 /* Small Title Styling */
 .small-title {
