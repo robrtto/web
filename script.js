@@ -10,12 +10,18 @@
         window.location.href = 'main.html';
     }
 
-    // Function to stop the video when it ends
-    window.addEventListener('DOMContentLoaded', () => {
-        const video = document.getElementById('intro-video');
-        if (video) {
-            video.addEventListener('ended', () => {
-                video.pause();
-            });
-        }
-    });
+   // Function to control video behavior
+   window.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('intro-video');
+    if (video) {
+        // Start playing the video manually
+        video.play();
+
+        // Add an event listener to pause when the video ends
+        video.addEventListener('ended', () => {
+            video.pause();
+            video.currentTime = video.duration; // Ensure it stays at the last frame
+            console.log("Video has ended and paused.");
+        });
+    }
+});
