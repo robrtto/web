@@ -11,6 +11,15 @@ body, html {
     color: #fff;
 }
 
+/* Navigation Menu */
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 2;
+}
+
 /* Intro Section Styling */
 .intro {
     position: fixed;

@@ -10,6 +10,11 @@
         window.location.href = 'main.html';
     }
 
+    //funciton to navigate back to landing page from main site
+    function enterBack() {
+        window.location.href = 'index.html';
+    }
+
    // Function to control video behavior
    window.addEventListener('DOMContentLoaded', () => {
     const video = document.getElementById('intro-video');

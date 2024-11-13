@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Full-Screen Intro Section -->
-    <div class="intro">
+    <header>
+        <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="#portfolio">Art Portfolio</a>
+            <a href="#projects">Programming Projects</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+     <!-- Small Title in the Top-Left C index.htmlorner -->
+     <div class="small-title">Rejopachí</div>
+    
+     <!-- Full-Screen Intro Section -->
+     <div class="intro"> 
         <!-- Video Background -->
-        <video id="intro-video" autoplay muted playsinline>
+        <video id="intro-video" muted playsinline>
             <source src="images/WVES..mp4" type="video/mp4">
             Your browser does not support this video tag.
         </video>
-    </div>
-        <!-- Small Title in the Top-Left C index.htmlorner -->
-        <div class="small-title">Rejopachí</div>
-        <!--Same navigation as in main.html -->
-        <header>
-            <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
-            <nav class="nav-menu" id="nav-menu">
-                <a href="#portfolio">Art Portfolio</a>
-                <a href="#projects">Programming Projects</a>
-                <a href="#about">About Me</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
 
         <!-- Content Overlaid on Video -->
         <div class="content-container">
@@ -38,7 +38,8 @@
                 <button class="portfolio-button" onclick="enterSite()">Enter Portfolio</button>
             </div>
         </div>
-
+     </div>    
+     
     <script src="script.js" defer></script>
 </body>
 </html>
