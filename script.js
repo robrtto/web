@@ -14,8 +14,9 @@ function enterBack() {
     window.location.href = 'index.html';
 }
 
-// Function to control video behavior
+// Function to control video behavior and Intersection Observer
 window.addEventListener('DOMContentLoaded', () => {
+    // Video control logic
     const video = document.getElementById('intro-video');
     if (video) {
         video.play();
@@ -29,20 +30,18 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Intersection Observer for fade-in effect
-
-        const fadeElements = document.querySelectorAll('.fade-in');
-    
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Stop observing once visible
-                }
-            });
-        }, { threshold: 0.2 });
-    
-        fadeElements.forEach(element => {
-            observer.observe(element);
+    const fadeElements = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                console.log('Element is now visible:', entry.target);
+                observer.unobserve(entry.target);
+            }
         });
+    }, {
+        threshold: 0.2
     });
-    
+
+    fadeElements.forEach(element => observer.observe(element));
+});
