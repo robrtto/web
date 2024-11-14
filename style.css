@@ -118,7 +118,7 @@ header {
     font-weight: bold;
     pointer-events: none;
     opacity: 0;
-    transition: opacity 1s ease-out;
+    transition: opacity 3s ease-out;
 }
 
 /* Fade-In Effect for both image and text */
