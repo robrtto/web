@@ -31,11 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Intersection Observer for fade-in effect
     const fadeElements = document.querySelectorAll('.fade-section');
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                console.log('Element is now visible:', entry.target);
                 observer.unobserve(entry.target);
             }
         });
