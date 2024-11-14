@@ -97,33 +97,42 @@ header {
     color: #000;
 }
 
+.image-wrapper {
+    position: relative;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 
 .overlay-text {
-    font-family: 'SF Pro Compressed Black', 'SF Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif ;
-    font-weight: 900;
-    font-size: 2rem;
-    line-height: 1.2;
-}
-/* Fade-In Effect for Text Only */
-.fade-section .overlay-text {
     position: absolute;
     font-size: 1.5rem;
     font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     pointer-events: none;
-    opacity: 0; /* Text starts hidden */
-    transition: opacity 3s ease-out; /* Slower fade for text */
+    opacity: 0;
+    transition: opacity 1s ease-out;
 }
 
-/* When .fade-section has the visible class, fade in the text */
+.fade-section.visible img,
 .fade-section.visible .overlay-text {
     opacity: 1;
 }
+
 /* Make all images responsive */
 #portfolio img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: none;
+    margin: 0.5;
     object-fit: contain;
 }
 

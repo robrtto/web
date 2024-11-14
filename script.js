@@ -28,7 +28,10 @@ window.addEventListener('DOMContentLoaded', () => {
             console.log("Video has ended and paused.");
         });
     }
-
+    function enterBack() {
+        window.location.href = 'index.html';
+    }
+    
     // Intersection Observer for fade-in effect
     const fadeElements = document.querySelectorAll('.fade-section');
 
