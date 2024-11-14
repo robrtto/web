@@ -29,18 +29,21 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Intersection Observer for fade-in effect
-    const fadeElements = document.querySelectorAll('.fade-in');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once visible
-            }
+    window.addEventListener('DOMContentLoaded', () => {
+        const fadeElements = document.querySelectorAll('.fade-in');
+    
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Stop observing once visible
+                }
+            });
+        }, { threshold: 0.2 });
+    
+        fadeElements.forEach(element => {
+            observer.observe(element);
         });
-    }, { threshold: 0.2 });
-
-    fadeElements.forEach(element => {
-        observer.observe(element);
     });
+    
 });

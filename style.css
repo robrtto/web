@@ -97,14 +97,35 @@ header {
     color: #000;
 }
 
-/* Fade-in Animation */
-.fade-in {
+/* Container for each image and its overlay text */
+.image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay text positioned on top of the image */
+.overlay-text {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    pointer-events: none; /* Ensures text doesn't interfere with clicks on the image */
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.fade-in.visible {
+.fade-section .visible .overlay-text {
     opacity: 1;
     transform: translateY(0);
 }
