@@ -127,6 +127,18 @@ header {
     margin: 1rem auto;
     object-fit: contain;
 }
+/* Fade-in effect styling */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Sections Styling */
 section {
     padding: 4rem 2rem;

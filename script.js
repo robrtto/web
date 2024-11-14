@@ -30,3 +30,22 @@
         });
     }
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries)=> {
+        entries.forEach(entry => {
+            if (entry.boundingClientRect,isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target) // Stop Observing once visible
+            }
+        });
+    }, {
+        threshold: 0.2 
+    });
+
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+});
