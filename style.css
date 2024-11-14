@@ -112,7 +112,7 @@ header {
     object-fit: cover;
 }
 .overlay-text {
-    font-family: 'SF Pro Black', 'SF Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif ;
+    font-family: 'SF Pro Compressed Black', 'SF Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif ;
     font-weight: 900;
     font-size: 2rem;
     line-height: 1.2;
