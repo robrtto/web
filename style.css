@@ -111,7 +111,12 @@ header {
     display: block;
     object-fit: cover;
 }
-
+.overlay-text {
+    font-family: 'SF Pro Black', 'SF Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif ;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.2;
+}
 /* Fade-In Effect for Text Only */
 .fade-section .overlay-text {
     position: absolute;
