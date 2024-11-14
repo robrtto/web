@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Intersection Observer for fade-in effect
-    window.addEventListener('DOMContentLoaded', () => {
+
         const fadeElements = document.querySelectorAll('.fade-in');
     
         const observer = new IntersectionObserver((entries) => {
@@ -46,4 +46,3 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-});
