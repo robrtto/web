@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'SF Pro';
+    src: url('SF-Pro-Display-Black.otf') format('truetype');
+    font-weight: 900; /* Black weight */
+    font-stretch: condensed;
+    font-style: normal;
+}
+
 body {
     font-family: 'San Francisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #000;
@@ -100,7 +108,7 @@ header {
 /* Gallery View Button Styling */
 .gallery-button-container {
     text-align: center;
-    margin-top: 2rem;
+    margin: 1.5rem 0;
 }
 
 .gallery-button {
@@ -134,13 +142,15 @@ header {
 }
 
 .overlay-text {
-    position: absolute;
+    font-family: 'SF Pro', 'San Francisco', system-ui, sans-serif;
+    font-weight: 900; /* Black */
+    font-stretch: condensed;
     font-size: 1.5rem;
-    font-weight: bold;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     pointer-events: none;
     opacity: 0;
     transition: opacity 1s ease-out;
+    color: #fff;
 }
 
 .fade-section.visible img,
