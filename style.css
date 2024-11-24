@@ -126,6 +126,7 @@ header {
     color: #000;
 }
 
+/* Main.html Overlay Text */
 .image-wrapper {
     position: relative;
     margin: 40px 0;
@@ -141,22 +142,27 @@ header {
     object-fit: cover;
 }
 
-.overlay-text {
+.image-wrapper .main-overlay-text {
     font-family: 'SF Pro', 'San Francisco', system-ui, sans-serif;
     font-weight: 900; /* Black */
     font-stretch: condensed;
     font-size: 1.5rem;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     pointer-events: none;
     opacity: 0;
     transition: opacity 1s ease-out;
-    color: #fff;
+    z-index: 2; /* Ensure it's on top of the image */
 }
 
-.fade-section.visible img,
-.fade-section.visible .overlay-text {
+.image-wrapper:hover .main-overlay-text {
     opacity: 1;
 }
+
 
 /* Make all images responsive */
 #portfolio img {
@@ -224,13 +230,16 @@ footer {
     border-radius: 10px;
 }
 
-.gallery-item .overlay-text {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+.gallery-item .gallery-overlay-text {
+    font-family: 'SF Pro', 'San Francisco', system-ui, sans-serif;
+    font-weight: 900; /* Black */
+    font-stretch: condensed;
     font-size: 1.2rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.5s ease;
